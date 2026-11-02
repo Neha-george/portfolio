@@ -15,7 +15,7 @@ const TIMELINE = [
     icon: Users,
     title: 'Joint Secretary',
     org: 'IEEE Vehicular Technology Society (VTS) — MACE Chapter',
-    date: '2024 – Present',
+    date: '2024 – 2025',
     detail: 'Organizing technical events, workshops, and seminars on vehicle technology and connected AI systems. Coordinating cross-chapter collaborations.',
     color: 'cyan',
     type: 'Leadership',

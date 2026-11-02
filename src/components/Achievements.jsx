@@ -39,8 +39,8 @@ const HONORS = [
     desc: 'Honored for the most impactful innovation bridging the digital divide for 450M+ informal Indian workers through voice interaction and tamper-proof verification.',
   },
   {
-    year: '2024-PRES',
-    date: 'ACTIVE',
+    year: '2024-25',
+    date: '2024 – 2025',
     award: 'Joint Secretary',
     awardType: 'indigo',
     event: 'IEEE Vehicular Technology Society',
@@ -48,7 +48,7 @@ const HONORS = [
     project: 'Leadership & Technical Community',
     icon: Star,
     highlight: 'Executive Leadership Role',
-    desc: 'Leading chapter operations, organizing national technical symposia, and conducting peer-led developer workshops on connected vehicle protocols and AI.',
+    desc: 'Led chapter operations, organized national technical symposia, and conducted peer-led developer workshops on connected vehicle protocols and AI.',
   },
   {
     year: '2023-PRES',

@@ -104,11 +104,11 @@ export default function About() {
               <div className="editorial-about__lead-item">
                 <div className="editorial-about__lead-item-top">
                   <span className="editorial-about__lead-role">Joint Secretary</span>
-                  <span className="editorial-tag">2024 — PRESENT</span>
+                  <span className="editorial-tag">2024 — 2025</span>
                 </div>
                 <div className="editorial-about__lead-org">IEEE Vehicular Technology Society (VTS) MACE</div>
                 <p className="editorial-about__lead-desc">
-                  Spearheading chapter symposiums, connected vehicle AI workshops, and cross-society developer hackathons.
+                  Spearheaded chapter symposiums, connected vehicle AI workshops, and cross-society developer hackathons.
                 </p>
               </div>
 
