@@ -1,0 +1,74 @@
+.metrics {
+  position: relative;
+  z-index: 1;
+  padding: 0 0 80px;
+}
+
+.metrics__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) { .metrics__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .metrics__grid { grid-template-columns: 1fr; } }
+
+.metrics__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.metrics__card:hover {
+  transform: translateY(-3px);
+}
+
+.metrics__card--indigo:hover { box-shadow: 0 8px 32px rgba(99,102,241,0.2); border-color: var(--border-indigo); }
+.metrics__card--cyan:hover { box-shadow: 0 8px 32px rgba(6,182,212,0.2); border-color: var(--border-cyan); }
+.metrics__card--emerald:hover { box-shadow: 0 8px 32px rgba(16,185,129,0.2); border-color: rgba(16,185,129,0.2); }
+.metrics__card--amber:hover { box-shadow: 0 8px 32px rgba(245,158,11,0.2); border-color: rgba(245,158,11,0.2); }
+
+.metrics__icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.metrics__icon--indigo { background: var(--indigo-glow); color: var(--indigo-light); }
+.metrics__icon--cyan { background: var(--cyan-glow); color: var(--cyan-light); }
+.metrics__icon--emerald { background: var(--emerald-glow); color: var(--emerald-light); }
+.metrics__icon--amber { background: rgba(245,158,11,0.1); color: var(--amber); }
+
+.metrics__value {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--indigo-light), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.metrics__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.metrics__sub {
+  font-size: 11px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+}
+

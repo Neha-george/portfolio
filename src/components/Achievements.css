@@ -1,0 +1,118 @@
+.editorial-honors {
+  position: relative;
+  padding: 80px 0 100px;
+  z-index: 1;
+}
+
+.editorial-honors__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+@media (max-width: 900px) {
+  .editorial-honors__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Honors Ledger */
+.editorial-honors__ledger {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-dim);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.editorial-honors__row {
+  display: grid;
+  grid-template-columns: 140px 1.2fr 1.5fr;
+  gap: 32px;
+  align-items: center;
+  padding: 28px 32px;
+  border-bottom: 1px solid var(--border-dim);
+  transition: all var(--transition-fast);
+}
+
+.editorial-honors__row:last-child {
+  border-bottom: none;
+}
+
+.editorial-honors__row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 992px) {
+  .editorial-honors__row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px;
+  }
+}
+
+/* Col Date */
+.editorial-honors__col-date {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.editorial-honors__year {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.editorial-honors__subdate {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+/* Col Title */
+.editorial-honors__col-title {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editorial-honors__award-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.editorial-honors__project-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.editorial-honors__event-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.editorial-honors__org-name {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Col Desc */
+.editorial-honors__col-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
